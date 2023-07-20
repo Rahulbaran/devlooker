@@ -1,0 +1,62 @@
+{
+  "name": "devlooker",
+  "private": false,
+  "type": "module",
+  "author": {
+    "name": "Rahul Kumar",
+    "email": "rahulkumar109422@gmail.com",
+    "url": "https://rahulbaran.vercel.app"
+  },
+  "scripts": {
+    "dev": "vite serve",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "prettier": {
+    "useTabs": false,
+    "trailingComma": "none",
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "semi": true,
+    "endOfLine": "auto",
+    "arrowParens": "avoid"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.25%",
+      "not dead",
+      "not op_mini all",
+      "not IE 11"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-legacy": "^4.1.0",
+    "@vitejs/plugin-react": "^4.0.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "lightningcss": "^1.21.5",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^34.0.0",
+    "terser": "^5.19.1",
+    "vite": "^4.4.0"
+  }
+}
