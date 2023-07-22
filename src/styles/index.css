@@ -115,7 +115,7 @@ audio {
   padding-block-start: calc(var(--base-padding) * 4);
   display: grid;
   justify-items: center;
-  gap: calc(var(--base-gap) * 4);
+  gap: calc(var(--base-gap) * 2);
 
   & > * {
     inline-size: min(90vw, 720px);
@@ -130,14 +130,14 @@ audio {
 }
 
 header {
-  margin-block-end: calc(var(--base-margin) * 2);
+  margin-block-end: calc(var(--base-margin) * 4);
 }
 
 .search-form {
   inline-size: 100%;
   display: grid;
   gap: calc(var(--base-gap) * 2);
-  grid-template-columns: 1fr minmax(70px, 0.2fr);
+  grid-template-columns: 1fr minmax(75px, 0.2fr);
 
   & input {
     padding: calc(var(--base-padding) * 1.2) var(--base-padding);
@@ -148,5 +148,13 @@ header {
   & button {
     font-family: inherit;
     font-size: calc(var(--base-fs) * 1.1);
+    background-color: var(--input-bg);
+    border-radius: calc(var(--base-br) * 0.2);
+    border: 1px solid var(--input-border-color);
+    box-shadow: 5px 5px 6px oklch(5% 0.01 var(--hue) / 0.25);
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
