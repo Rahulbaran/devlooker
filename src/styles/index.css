@@ -158,3 +158,68 @@ header {
     }
   }
 }
+
+/* Portfolio Section */
+.portfolio-section > *:not(:last-child) {
+  margin-block-end: calc(var(--base-margin) * 3);
+}
+
+.user-header {
+  display: flex;
+  gap: calc(var(--base-gap) * 2);
+  align-items: center;
+
+  .avatar {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid var(--input-border-color);
+    }
+  }
+}
+
+.user-body {
+  background-color: var(--body-bg);
+  padding: calc(var(--base-padding) * 1.5) calc(var(--base-gap) * 2.5);
+  border-radius: calc(var(--base-br) * 0.5);
+}
+
+.follow-wrapper {
+  display: flex;
+  gap: calc(var(--base-gap) * 4);
+  margin-block-end: var(--base-margin);
+
+  & span {
+    margin-inline-end: var(--base-margin);
+  }
+}
+
+.repos span {
+  margin-inline-end: var(--base-margin);
+}
+
+.user-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--base-gap) * 0.5) calc(var(--base-gap) * 2);
+
+  & > * {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--base-gap);
+  }
+
+  & svg {
+    font-size: 1.1rem;
+  }
+
+  & p {
+    font-size: calc(var(--base-fs) * 0.9);
+  }
+}
